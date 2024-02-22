@@ -52,9 +52,23 @@
 //         return (pow(temp*temp+1,0.5)-1)/temp;
 //     }
 // }
+// double archimedesAlt(int n)
+// {
+//     if (n == 0)
+//     {
+//         return (1/pow(3,0.5));
+//     }
+//     else
+//     {
+//         double temp = archimedes(n-1);
+//         return temp/(pow(temp*temp+1,0.5)+1);
+//     }
+// }
 // int main()
 // {
+//     std::cout << "Wzor a" << "\t" << "Wzor b" << std::endl << std::endl;
 //     for (int i=0; i<=30; i++)
-//         std::cout << 6* pow(2,i) * archimedes(i) << std::endl;
+//         std::cout << 6* pow(2,i) * archimedes(i) << "\t" << 6* pow(2,i) * archimedesAlt(i) << std::endl;
 //     return 0;
 // }
+
