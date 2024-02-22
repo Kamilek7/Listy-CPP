@@ -14,7 +14,6 @@
 // {
 //     return 1/pow(2*x-1,2);
 // }
-
 // double sum(int start, int n, double (*func)(int))
 // {
 //     double suma = 0;
@@ -29,7 +28,6 @@
 //         suma *= func(i);
 //     return suma;
 // }
-
 // int main()
 // {
 //     std::cout<<4*sum(1,1000000, &pierwsze)<< std::endl <<2*product(1,1000000, &drugie) << std::endl <<pow(8*sum(1,1000000, &trzecie),0.5);
@@ -72,3 +70,56 @@
 //     return 0;
 // }
 
+// ZAD 3 (wersja double)
+
+// #include <iostream>
+// #include <cmath>
+// double down(int n)
+// {
+//     double suma = 0;
+//     for (int i = 1; i<=n; i++)
+//         suma += (double)1/i;
+//     return suma;
+// }
+// double up(int n)
+// {
+//     double suma = 0;
+//     for (int i = n; i>=1;i--)
+//         suma += (double)1/i;
+//     return suma;
+// }
+// int main()
+// {
+//     std::cout << "Down" << "\t" << "Up" << "\t" << "Down - Up" << std::endl;
+//     std::cout << down(100) << "\t" << up(100) << "\t" << down(100)-up(100) << std::endl;
+//     std::cout << down(100000) << "\t" << up(100000) << "\t" << down(100000)-up(100000) << std::endl;
+//     std::cout << down(100000000) << "\t" << up(100000000) << "\t" << down(100000000)-up(100000000) << std::endl;
+//     return 0;
+// }
+
+// ZAD 3 (wersja float)
+
+// #include <iostream>
+// #include <cmath>
+// float down(int n)
+// {
+//     float suma = 0;
+//     for (int i = 1; i<=n; i++)
+//         suma += (float)1/i;
+//     return suma;
+// }
+// float up(int n)
+// {
+//     float suma = 0;
+//     for (int i = n; i>=1;i--)
+//         suma += (float)1/i;
+//     return suma;
+// }
+// int main()
+// {
+//     std::cout << "Down" << "\t" << "Up" << "\t" << "Down - Up" << std::endl;
+//     std::cout << down(100) << "\t" << up(100) << "\t" << down(100)-up(100) << std::endl;
+//     std::cout << down(100000) << "\t" << up(100000) << "\t" << down(100000)-up(100000) << std::endl;
+//     std::cout << down(100000000) << "\t" << up(100000000) << "\t" << down(100000000)-up(100000000) << std::endl;
+//     return 0;
+// }
