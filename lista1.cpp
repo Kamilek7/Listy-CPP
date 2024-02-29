@@ -1,3 +1,5 @@
+// Kamil Jarocki
+
 // ZAD 1
 
 // #include <iostream>
