@@ -22,7 +22,7 @@ double archimedesAlt(int n)
     }
     else
     {
-        double temp = archimedes(n - 1);
+        double temp = archimedesAlt(n - 1);
         return temp/(std::sqrt(temp * temp + 1.0) + 1.0);
     }
 }
