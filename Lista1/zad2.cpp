@@ -1,7 +1,7 @@
 // ZAD 2
 
 #include <iostream>
-#include <cmath>
+#include <math.h>
 double archimedes(int n)
 {
     if (n == 0)
@@ -31,6 +31,6 @@ int main()
     std::cout.precision(12);
     std::cout << "n        \tWzor a      " << "\t" << "Wzor b\n\n";
     for (int i = 0; i <= 30; i++)
-        std::cout << i << "\t" << 6.0 * pow(2.0, i) * archimedes(i) << "\t" << 6.0 * pow(2.0, i) * archimedesAlt(i) << std::endl;
+        std::cout << i << "\t" << M_PI - 6.0 * pow(2.0, i) * archimedes(i) <<  "\t" << M_PI - 6.0 * pow(2.0, i) * archimedesAlt(i) << std::endl;
     return 0;
 }
