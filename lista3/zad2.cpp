@@ -10,7 +10,6 @@ void release(Link** phead)
     Link* head = *phead;
     if (head!=0)
     {
-        std::cout <<"aba" <<std::endl;
         head = head->next;
         release(&head);
         delete head;
@@ -27,9 +26,8 @@ int main()
     n3.next = &n4;
     n2.next = &n3;
     n1.next = &n2;
-    std::cout << sizeof(n1) << std::endl;
     Link* temp = &n1;
     release(&temp);
-    std::cout << sizeof(n1) << std::endl;
+    std::cout << (temp == nullptr) << std::endl;
     return 0;
 }
